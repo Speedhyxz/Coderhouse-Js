@@ -1,0 +1,23 @@
+// _mixins.scss
+
+// Mixin para los efectos de hover
+@mixin hover-effect($scale: 1.1) {
+    transition: transform 0.5s ease-in-out;
+    &:hover {
+      transform: scale($scale);
+    }
+  }
+  
+  // Mixin para sombras de texto
+  @mixin text-shadow($color: #333333, $offset: 0.05em) {
+    text-shadow: $offset $offset $color;
+  }
+  
+  // Mixin para estilos generales de contenedor
+  @mixin container-styles($min-height: 100vh) {
+    position: relative;
+    min-height: $min-height;
+    padding-top: 56px; // Para compensar el navbar
+    overflow: hidden;
+  }
+  

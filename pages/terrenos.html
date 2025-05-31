@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria | Terrenos</title>
+    <meta name="description"
+        content="Buscá terrenos en venta y alquiler con InmoVida. Opciones urbanas, rurales e industriales en todo el país, con asesoramiento personalizado.">
+    <meta name="keywords"
+        content="terrenos en venta, terrenos en alquiler, comprar terreno, alquilar terreno, terrenos urbanos, terrenos rurales, inmuebles, InmoVida">
+    <link rel="shortcut icon" href="../assets/img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="d-flex justify-content-between align-items-center p-2 top-header">
+            <div class="text-light"> <i class="fa-solid fa-clock"></i> Lun - Vie: 9:00 - 18:00 </div>
+            <div class="d-flex justify-content-end">
+                <ul class="d-flex flex-row gap-2 m-2 text-light">
+                    <li><i class="fa-solid fa-location-dot"></i> Av.example</li>
+                    <li><a href=""><i class="fa-solid fa-phone text-light contact"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-envelope text-light contact"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-success">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#"><img class="logo" src="../assets/img/logo.png"
+                        alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="text-light nav-link active" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="text-light nav-link active" href="sobrenosotros.html">Sobre
+                                Nosotros</a></li>
+                        <li class="nav-item"><a class="text-light nav-link active" href="../index.html">Comprar</a></li>
+                        <li class="nav-item"><a class="text-light nav-link active" href="../index.html#faq">FAQ</a></li>
+                        <li class="nav-item"><a class="text-light nav-link active" href="ayuda.html">Ayuda</a></li>
+                    </ul>    <button id="sessionBtn" class="btn btn-outline-light ms-auto" type="button">Iniciar sesión</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-section bg-success text-center">
+            <div class="container">
+                <h1 class="display-4">Propiedades Exclusivas</h1>
+                <p class="lead">Explora nuestras propiedades destacadas haciendo clic en cada terreno</p>
+            </div>
+        </div>
+
+        <div class="container" id="destino" data-aos="zoom-in">
+            <h2 class="property-title">Nuestras Propiedades Destacadas</h2>
+            <div class="row">
+                <!-- Terreno 1 -->
+                <div class="col-md-4">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#terreno1Modal">
+                        <img src="../assets/img/terreno/terreno1.jpg" class="card-img-top" alt="Terreno 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Terreno Fuera De La Ciudad</h5>
+                            <p class="card-text">Pradera de 4 hectáreas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terreno 2 -->
+                <div class="col-md-4">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#terreno2Modal">
+                        <img src="../assets/img/terreno/terreno2.jpg" class="card-img-top" alt="Terreno 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Terreno A Las Afueras De La Ciudad</h5>
+                            <p class="card-text">Terreno de 1 hectárea.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terreno 3 -->
+                <div class="col-md-4">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#terreno3Modal">
+                        <img src="../assets/img/terreno/terreno3.jpg" class="card-img-top" alt="Terreno 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Terreno En La Ciudad</h5>
+                            <p class="card-text">Terreno de 500m2.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Terreno 1 -->
+        <div class="modal fade" id="terreno1Modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Terreno Fuera De La Ciudad</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6"><img src="../assets/img/terreno/terreno1.jpg" class="img-fluid"
+                                    alt="Terreno 1"></div>
+                            <div class="col-md-6"><img src="../assets/img/terreno/terreno1(2).jpg" class="img-fluid"
+                                    alt="Terreno 1"></div>
+                        </div>
+                        <p class="mt-3">Pradera de 4 hectáreas.</p>
+                        <h5 class="text-success">Precio: $27,000</h5>
+                    </div>
+                    <a class="bg-success text-center text-light p-2 text-decoration-none" href="">Comprar <i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Terreno 2 -->
+        <div class="modal fade" id="terreno2Modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Terreno A Las Afueras De La Ciudad</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6"><img src="../assets/img/terreno/terreno2.jpg" class="img-fluid"
+                                    alt="Terreno 2"></div>
+                            <div class="col-md-6"><img src="../assets/img/terreno/terreno2(2).jpeg" class="img-fluid"
+                                    alt="Terreno 2"></div>
+                        </div>
+                        <p class="mt-3">Terreno de 1 hectárea.</p>
+                        <h5 class="text-success">Precio: $31,000</h5>
+                    </div>
+                    <a class="bg-success text-center text-light p-2 text-decoration-none" href="">Comprar <i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Terreno 3 -->
+        <div class="modal fade" id="terreno3Modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Terreno En La Ciudad</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6"><img src="../assets/img/terreno/terreno3.jpg" class="img-fluid"
+                                    alt="Terreno 3"></div>
+                            <div class="col-md-6"><img src="../assets/img/terreno/terreno3(2).jpg" class="img-fluid"
+                                    alt="Terreno 3"></div>
+                        </div>
+                        <p class="mt-3">Terreno de 500m².</p>
+                        <h5 class="text-success">Precio: $23,000</h5>
+                    </div>
+                    <a class="bg-success text-center text-light p-2 text-decoration-none" href="">Comprar <i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer bg-success text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>Email: info@inmobiliaria.com</p>
+                    <p>Teléfono: +123 456 789</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces</h5>
+                    <p><a href="../index.html">Inicio</a></p>
+                    <p><a href="sobrenosotros.html">Sobre nosotros</a></p>
+                    <p><a href="../index.html#destino">Propiedades</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <p><a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+                </div>
+            </div>
+            <p class="mt-3">&copy; 2025 Inmobiliaria. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+     <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

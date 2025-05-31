@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>Inmobiliaria | Edificios</title>
+    <meta name="description"
+        content="Descubrí edificios en venta y alquiler con InmoVida. Opciones comerciales y residenciales en distintas zonas del país, con asesoramiento profesional.">
+    <meta name="keywords"
+        content="edificios en venta, edificios en alquiler, comprar edificio, alquilar edificio, propiedades comerciales, edificios residenciales, inmobiliaria, InmoVida">
+    <link rel="shorcut icon" href="../assets/img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="d-flex justify-content-between align-items-center p-2 top-header ">
+            <div class=" text-light"> <i class="fa-solid fa-clock"></i> Lun - Vie: 9:00 - 18:00 </div>
+
+            <div class="d-flex justify-content-end ">
+                <ul class="d-flex flex-row gap-2 m-2  text-light">
+                    <li><i class="fa-solid fa-location-dot"></i> Av.example</li>
+                    <li><a class="" href=""><i class="fa-solid fa-phone  text-light contact"></i></a></li>
+                    <li><a class="" href=""><i class="fa-solid fa-envelope  text-light contact"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-success">
+            <div class="container-fluid">
+                <a class="navbar-brand  text-light " href="#"><img class="logo" src="../assets/img/logo.png"
+                        alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="  text-light nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="  text-light nav-link active" aria-current="page" href="sobrenosotros.html">Sobre
+                                Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" text-light nav-link active" aria-current="page" href="../index.html">Comprar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" text-light nav-link active" aria-current="page" href="../index.html#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" text-light nav-link active" aria-current="page" href="ayuda.html">Ayuda</a>
+                        </li>
+                    </ul>
+                       <button id="sessionBtn" class="btn btn-outline-light ms-auto" type="button">Iniciar sesión</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="hero-section bg-success text-center">
+            <div class="container">
+                <h1 class="display-4">Propiedades Exclusivas</h1>
+                <p class="lead">Explora nuestras propiedades destacadas haciendo clic en cada edificio</p>
+            </div>
+        </div>
+
+
+        <div class="container" id="destino" data-aos="zoom-in">
+            <h2 class="property-title">Nuestras Propiedades Destacadas</h2>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modernHouseModal">
+                        <img src="../assets/img/edificio1/edificio1.jpg" class="card-img-top" alt="Edificio 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Edificio Futurista Orgánico</h5>
+                            <p class="card-text"> Con formas dinámicas y fachadas texturizadas, fusionando vidrio, metal
+                                y naturaleza.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#colonialHouseModal">
+                        <img src="../assets/img/edificio2/edificio2.jpg" class="card-img-top" alt="Edificio 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Edificio Minimalista Urbano</h5>
+                            <p class="card-text">Edificio de líneas limpias y fachadas de vidrio, con balcones flotantes
+                                y estructura moderna.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#luxuryAptModal">
+                        <img src="../assets/img/edificio3/edificio3.jpg" class="card-img-top" alt="Edificio 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Edificio Art Decó Clásico</h5>
+                            <p class="card-text">Fachada de piedra y líneas verticales marcadas, reflejando la elegancia
+                                y simetría del Art Decó.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#countryHouseModal">
+                        <img src="../assets/img/edificio4/edificio4.jpg" class="card-img-top" alt="Edificio 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Edificio Moderno</h5>
+                            <p class="card-text">Moderna torre urbana en Artigas con elegantes balcones y locales
+                                comerciales, un referente arquitectónico contemporáneo.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#villaModal">
+                        <img src="../assets/img/edificio5/edificio5.jpg" class="card-img-top" alt="Edificio 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Edificio Residencial</h5>
+                            <p class="card-text">Elegante torre de ladrillo rojizo y amplios ventanales en Artigas, con
+                                moderna base estructural y entorno urbano dinámico.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#penthouseModal">
+                        <img src="../assets/img/edificio6/edificio6.jpg" class="card-img-top" alt="Edificio 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Edificio Cilíndrico</h5>
+                            <p class="card-text">Elegante torre cilíndrica con diseño ondulado y amplios ventanales,
+                                rodeada de naturaleza y bajo un cielo claro.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="modal fade" id="modernHouseModal" tabindex="-1" aria-labelledby="modernHouseModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modernHouseModalLabel">Edificio futurista Órganico</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio1/edificioorganico1.jpg" class="img-fluid" alt="Edificio 1">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio1/edificioorganico2.jpg" class="img-fluid" alt="Edificio 1">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio1/edificioorganico3.jpg" class="img-fluid" alt="Edificio 1">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio1/edificioorganico4.jpg" class="img-fluid" alt="Edificio 1">
+                            </div>
+                        </div>
+                        <p class="mt-3">Con una estructura que imita las formas de la naturaleza, este edificio
+                            futurista orgánico destaca por su diseño único, que se integra perfectamente con el entorno.
+                            Sus líneas dinámicas y materiales sostenibles crean un ambiente donde la tecnología y la
+                            ecología convergen, proporcionando un espacio ideal para quienes buscan vivir y trabajar en
+                            un entorno innovador, eficiente y respetuoso con el medio ambiente.</p>
+                    </div>
+                    <h5 class="text-success "> Precio: $2,750,000.</h5>
+                    <a class="bg-success text-center text-light p-2 text-decoration-none" href="">Comprar<i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="colonialHouseModal" tabindex="-1" aria-labelledby="colonialHouseModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="colonialHouseModalLabel">Edificio Minimalista Urbano</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="../assets/img/casa1/sala1.jpg" class="img-fluid" alt="Edificio 2">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/img/casa1/cocina1.jpg" class="img-fluid" alt="Edificio 2">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/img/casa1/baño1.jpg" class="img-fluid" alt="Edificio 2">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/img/casa1/dormitorio1.jpg" class="img-fluid" alt="Edificio 2">
+                            </div>
+                        </div>
+                        <p class="mt-3">En pleno centro urbano, este edificio minimalista es el epítome de la modernidad
+                            y la simplicidad. Su arquitectura de líneas puras y espacios diáfanos crea un ambiente
+                            sereno y exclusivo, diseñado para quienes valoran la funcionalidad sin sacrificar el diseño.
+                            Cada detalle está pensado para ofrecer una experiencia de vida cómoda, elegante y acorde con
+                            el ritmo de la ciudad</p>
+                    </div>
+                    <h5 class="text-success "> Precio: $1,300,000.</h5>
+                    <a class="bg-success text-center text-light p-2 text-decoration-none" href="">Comprar<i
+                            class="fa-solid fa-cart-shopping"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="luxuryAptModal" tabindex="-1" aria-labelledby="luxuryAptModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="luxuryAptModalLabel">Edificio Art Decó Clásico</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio3/edificioart1.jpg" class="img-fluid" alt="Edificio 3">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio3/edificioart2.jpg" class="img-fluid" alt="Edificio 3">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio3/edificioart3.jpg" class="img-fluid" alt="Edificio 3">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio3/edificioart4.jpg" class="img-fluid" alt="Edificio 3">
+                            </div>
+                        </div>
+                        <p class="mt-3">Este emblemático edificio de negocios, con su diseño clásico y sofisticado,
+                            proporciona el ambiente perfecto para empresas que buscan combinar prestigio y comodidad.
+                            Con oficinas amplias, equipadas con lo último en tecnología y servicios, es el lugar ideal
+                            para impulsar el éxito empresarial en un entorno profesional de alto nivel</p>
+                    </div>
+                    <h5 class="text-success "> Precio: $1,230,000.</h5>
+                    <a class="bg-success text-center text-light p-2 text-decoration-none" href="">Comprar<i
+                            class="fa-solid fa-cart-shopping"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="countryHouseModal" tabindex="-1" aria-labelledby="countryHouseModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="countryHouseModalLabel">Edificio Moderno</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio4/edificiomoderno1.jpg" class="img-fluid" alt="Edificio 4">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio4/edificiomoderno2.jpg" class="img-fluid" alt="Edificio 4">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio4/edificiomoderno3.jpg" class="img-fluid" alt="Edificio 4">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio4/edificiomoderno4.jpg" class="img-fluid" alt="Edificio 4">
+                            </div>
+                        </div>
+                        <p class="mt-3">Con un diseño arquitectónico vanguardista, este edificio moderno ofrece una
+                            impresionante terraza con piscina, perfecta para momentos de ocio y descanso. El restaurante
+                            en el hall agrega un toque de sofisticación, brindando un ambiente único para disfrutar de
+                            una excelente gastronomía.</p>
+                    </div>
+                    <h5 class="text-success "> Precio: $1,500,000.</h5>
+                    <a class="bg-success text-center text-light p-2 text-decoration-none" href="">Comprar<i
+                            class="fa-solid fa-cart-shopping"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="villaModal" tabindex="-1" aria-labelledby="villaModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="villaModalLabel">Edificio residencial</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio5/recidencia1.jpg" class="img-fluid" alt="Edificio 5">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio5/residencia2.jpg" class="img-fluid" alt="Edificio 5">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio5/residencia3.jpg" class="img-fluid" alt="Edificio 5">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio5/residencia4.jpg" class="img-fluid" alt="Edificio 5">
+                            </div>
+                        </div>
+                        <p class="mt-3">Ubicado en una zona privilegiada, este edificio residencial se destaca por
+                            integrar un restaurante de primer nivel, estacionamiento exclusivo y un entorno pensado para
+                            brindar calidad de vida, confort y practicidad en cada detalle.</p>
+                    </div>
+                    <h5 class="text-success "> Precio: $1.250,000.</h5>
+                    <a class="bg-success text-center text-light p-2 text-decoration-none" href="">Comprar<i
+                            class="fa-solid fa-cart-shopping"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="penthouseModal" tabindex="-1" aria-labelledby="penthouseModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="penthouseModalLabel">Edificio Cilíndrico</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio6/edificiocilindrico3.jpg" class="img-fluid" alt="Edificio 6">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio6/edificiocilindrico4.jpg" class="img-fluid" alt="Edificio 6">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio6/edificiocilindrico1.jpg" class="img-fluid" alt="Edificio 6">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/img/edificio6/edificiocilindrico2.jpg" class="img-fluid" alt="Edificio 6">
+                            </div>
+                        </div>
+                        <p class="mt-3">El edificio dispone de dos exclusivos penthouses con vistas privilegiadas, un
+                            restaurante ubicado en el hall principal que ofrece una experiencia gastronómica única,
+                            estacionamiento para residentes y visitantes, y una amplia piscina ideal para disfrutar del
+                            relax y el confort.</p>
+                    </div>
+                    <h5 class="text-success "> Precio: $2,600,000.</h5>
+                    <a class="bg-success text-center text-light p-2 text-decoration-none" href="">Comprar<i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer bg-success text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>Email: info@inmobiliaria.com</p>
+                    <p>Teléfono: +123 456 789</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces</h5>
+                    <p><a href="../index.html">Inicio</a></p>
+                    <p><a href="sobrenosotros.html">Sobre nosotros</a></p>
+                    <p><a href="../index.html#destino">Propiedades</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <p><a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+                </div>
+            </div>
+            <p class="mt-3">&copy; 2025 Inmobiliaria. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+     <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
