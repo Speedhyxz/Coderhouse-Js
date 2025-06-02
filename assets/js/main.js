@@ -18,8 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function redirigirSiLogueado() {
-    const path = window.location.pathname;
-    const estaEnPages = path.includes('/pages/');
+    const estaEnPages = window.location.pathname.includes('/pages/');
 
     if (usuarioActivo()) {
       if (estaEnPages) {
@@ -32,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // LOGIN
   if (loginForm) {
     const errorMsg = document.getElementById('errorMsg');
     const forgotLink = document.getElementById('forgotLink');
@@ -50,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
         errorMsg.textContent = "Usuario o contraseña incorrectos.";
       } else {
         localStorage.setItem('usuarioActivo', username);
-        errorMsg.textContent = "";
         window.location.href = '../index.html';
       }
     });
@@ -63,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // REGISTER
   if (registerForm) {
     const registerError = document.getElementById('registerError');
 
@@ -77,10 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const usuario = document.getElementById('usuario').value.trim();
       const pass1 = document.getElementById('pass1').value;
       const pass2 = document.getElementById('pass2').value;
-
       const usuarios = cargarUsuarios();
-
-      registerError.textContent = '';
 
       if (!nombre || !correo || !usuario || !pass1 || !pass2) {
         registerError.textContent = "Todos los campos son obligatorios.";
@@ -109,7 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // FORGOT PASSWORD
   if (forgotForm) {
     const forgotError = document.getElementById('forgotError');
 
@@ -119,10 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const email = document.getElementById('emailForgot').value.trim().toLowerCase();
       const newPass1 = document.getElementById('newPass1').value;
       const newPass2 = document.getElementById('newPass2').value;
-
       const usuarios = cargarUsuarios();
-
-      forgotError.textContent = '';
 
       const usuarioEncontrado = Object.entries(usuarios).find(([user, data]) => data.correo === email);
 
@@ -148,29 +137,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // LOGOUT BUTTON (en páginas dentro de /pages/)
   if (logoutBtn) {
     logoutBtn.addEventListener('click', () => {
       localStorage.removeItem('usuarioActivo');
       window.location.href = 'login.html';
     });
 
-    // Mostrar u ocultar botón según login
-    if (usuarioActivo()) {
-      logoutBtn.style.display = 'block';
-    } else {
-      logoutBtn.style.display = 'none';
-    }
+    logoutBtn.style.display = usuarioActivo() ? 'block' : 'none';
   }
 
-  // PROTECCIÓN DE index.html
   if (window.location.pathname.endsWith('index.html')) {
     if (!usuarioActivo()) {
       window.location.href = 'pages/login.html';
     }
   }
 
-  // BOTÓN SESSION EN HEADER (iniciar/cerrar sesión)
   if (sessionBtn) {
     const estaLogueado = !!usuarioActivo();
 
@@ -179,10 +160,8 @@ document.addEventListener('DOMContentLoaded', () => {
     sessionBtn.addEventListener('click', () => {
       if (estaLogueado) {
         localStorage.removeItem('usuarioActivo');
-        window.location.href = 'pages/login.html';
-      } else {
-        window.location.href = 'pages/login.html';
       }
+      window.location.href = 'pages/login.html';
     });
   }
 });
